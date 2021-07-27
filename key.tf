@@ -1,4 +1,4 @@
 resource "aws_key_pair" "virgin-key" {
   key_name = var.key-name
-  public_key = file("~/.ssh/id_rsa.pub")
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCuasXzi/WlbLBoSqJ60tNtwkobJ6tzoRg8mVe97YzBeuIy6zA9/Ecay9pv0mmg4bn0TVAn67P9irFram0YWtlaZblKvmKuq0nzw78JU5DMsSIA3BWnwbeLOlse1lWw52Iv6vloQgD4VgRTUnuFlBQxWZZk1pKi/f3aQ4iKdpd6nfhG2XXIyhjUAoVb0tkA3iLolBx/qvNUbzCqOQswvmDtiAsRd+pgSjnezbWNnedP4GT8onZtion3T93Oy46S7u33ZT4S8GMxs4q4caD4ZJEXuMPXFGv+9dFJ23EwiWge66AQh5Oqmaug2KbHSGcyle/3wa+7a5BpLf+QvPqFHEbH admin@ip-172-31-88-235"
 }
