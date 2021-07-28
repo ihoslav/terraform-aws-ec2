@@ -1,4 +1,4 @@
-resource "aws_instance" "ihos-ec2" {
+resource "aws_instance" "ihos-ec3" {
   ami = var.ami
   instance_type = var.instance-type
   security_groups = [ aws_security_group.ihos-sec.name ]
@@ -6,6 +6,6 @@ resource "aws_instance" "ihos-ec2" {
   
 
   tags = {
-    Name = "virgin-ec2"
+    Name = "virgin-ec3"
   }
 }
