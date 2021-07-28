@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 data "aws_instance" "virgin-ec2" {
-    instance_id = aws_instance.ihos-ec2.id 
+    instance_id = aws_instance.ihos-ec3.id 
   
 }
 
