@@ -1,0 +1,16 @@
+#! /bin/bash
+sudo yum install httpd -y
+sudo systemctl start httpd 
+sudo systemctl enable httpd
+sudo yum install git -y
+sudo wget https://releases.hashicorp.com/terraform/1.0.3/terraform_1.0.3_linux_amd64.zip
+sudo yum install unzip
+sudo unzip terraform_1.0.3_linux_amd64.zip
+sudo mv /home/ec2-user/terraform /usr/bin
+sudo yum install gnupg2 -y
+sudo wget -O /etc/yum.repos.d/jenkins.repo \ https://pkg.jenkins.io/redhat/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
+sudo yum upgrade
+sudo yum install jenkins java-11-openjdk-devel -y
+sudo systemctl daemon-reload
+sudo systemctl start jenkins
