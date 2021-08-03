@@ -14,4 +14,4 @@ sudo yum upgrade
 sudo yum install jenkins java-11-openjdk-devel -y
 sudo systemctl daemon-reload
 sudo service jenkins start
-sudo yum upgrade
+sudo yum update
