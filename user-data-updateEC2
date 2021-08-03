@@ -13,5 +13,5 @@ sudo rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
 sudo yum upgrade
 sudo yum install jenkins java-11-openjdk-devel -y
 sudo systemctl daemon-reload
-sudo systemctl start jenkins
+sudo service jenkins start
 sudo yum upgrade
